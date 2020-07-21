@@ -1,4 +1,4 @@
-package com.htc.todo.rest.webservices.restfulwebservice;
+package com.htc.todo.rest.webservices.restfulwebservice.helloworld;
 
 import javax.management.RuntimeErrorException;
 
@@ -20,8 +20,8 @@ public class HelloWorldController {
 	
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		throw new RuntimeErrorException(null,"Have Error! Contact HTC To get Support!");
-//		return new HelloWorldBean("zxcxzc");
+//		throw new RuntimeErrorException(null,"Have Error! Contact HTC To get Support!");
+		return new HelloWorldBean("zxcxzc");
 	}
 	
 	@GetMapping(path = "/hello-world-bean/{name}")

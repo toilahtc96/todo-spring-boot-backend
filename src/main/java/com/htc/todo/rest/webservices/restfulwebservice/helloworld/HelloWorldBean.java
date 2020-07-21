@@ -1,4 +1,4 @@
-package com.htc.todo.rest.webservices.restfulwebservice;
+package com.htc.todo.rest.webservices.restfulwebservice.helloworld;
 
 public class HelloWorldBean {
 
