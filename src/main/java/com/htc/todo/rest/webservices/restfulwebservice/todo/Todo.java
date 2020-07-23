@@ -67,6 +67,7 @@ public class Todo {
 		this.username = username;
 	}
 
+	protected Todo() {}
 	@Override
 	public String toString() {
 		return "Todo [id=" + id + ", description=" + description + ", isDone=" + isDone + ", targetDate=" + targetDate
