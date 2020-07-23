@@ -1,7 +1,5 @@
 package com.htc.todo.rest.webservices.restfulwebservice.helloworld;
 
-import javax.management.RuntimeErrorException;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +13,7 @@ public class HelloWorldController {
 //	@RequestMapping(method = RequestMethod.GET,path = "/hello-world")
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World2";
+		return "Hello World22";
 	}
 	
 	@GetMapping(path = "/hello-world-bean")

@@ -1,7 +1,6 @@
 package com.htc.todo.rest.webservices.restfulwebservice.todo;
 
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +49,7 @@ public class TodoController {
 	public ResponseEntity<Todo> updateTodo(@PathVariable String username, @PathVariable int id,
 			@RequestBody Todo todo) {
 		Todo todoUpdated = todoHardcodeService.save(todo);
-		return new ResponseEntity<Todo>(todo, HttpStatus.OK);
+		return new ResponseEntity<Todo>(todoUpdated, HttpStatus.OK);
 	}
 
 	// Create a new todo
