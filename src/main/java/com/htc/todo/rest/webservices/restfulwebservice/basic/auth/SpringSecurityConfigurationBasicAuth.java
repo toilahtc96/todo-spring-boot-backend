@@ -14,8 +14,7 @@ public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerA
 	protected void configure(HttpSecurity http) throws Exception {
 		// TODO Auto-generated method stub
 //		super.configure(http);
-		http.csrf().disable().authorizeRequests()
-			.antMatchers(HttpMethod.OPTIONS, "/**")
-			.permitAll().anyRequest().authenticated().and().httpBasic();
+		http.csrf().disable().authorizeRequests().antMatchers(HttpMethod.OPTIONS, "/**").permitAll().anyRequest()
+				.authenticated().and().httpBasic();
 	}
 }
