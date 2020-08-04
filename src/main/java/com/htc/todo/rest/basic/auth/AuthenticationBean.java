@@ -1,4 +1,4 @@
-package com.htc.todo.rest.webservices.restfulwebservice.basic.auth;
+package com.htc.todo.rest.basic.auth;
 
 public class AuthenticationBean {
 
