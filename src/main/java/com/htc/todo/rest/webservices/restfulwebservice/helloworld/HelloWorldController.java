@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 			
 //	@RequestMapping(method = RequestMethod.GET,path = "/hello-world")
-	@GetMapping(path = "/hello-world")
+	@GetMapping(path = "/")
 	public String helloWorld() {
 		return "Hello World22";
 	}

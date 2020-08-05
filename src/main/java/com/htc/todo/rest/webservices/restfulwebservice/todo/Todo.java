@@ -1,19 +1,25 @@
 package com.htc.todo.rest.webservices.restfulwebservice.todo;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
 public class Todo {
-	private int id;
+	@Id
+	@GeneratedValue
+	private Long id;
 	private String description;
 	private boolean isDone;
 	private Date targetDate;
 	private String username;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -49,7 +55,7 @@ public class Todo {
 		this.username = username;
 	}
 
-	public Todo(int id, String description, boolean isDone, Date targetDate, String username) {
+	public Todo(Long id, String description, boolean isDone, Date targetDate, String username) {
 		super();
 		this.id = id;
 		this.description = description;
@@ -58,7 +64,7 @@ public class Todo {
 		this.username = username;
 	}
 
-	public Todo(int id, String username, String description, Date targetDate, boolean isDone) {
+	public Todo(Long id, String username, String description, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
 		this.description = description;
